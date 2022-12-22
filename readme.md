@@ -39,10 +39,14 @@ On the bottom is a button cell holder for (2) CR2016 cells.
 
 ## Printed Circuit Board
 
-## Top
+### Top
 
 <img src="assets/board_top.png" style="zoom:15%;" />
 
 ### Bottom
 
 <img src="assets/board_bottom.png" alt="bottom" style="zoom:15%;" />
+
+### Schematic
+
+![schematic](assets/schematic.png)
