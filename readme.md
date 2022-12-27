@@ -6,9 +6,19 @@ This project aims to create a capacitive touch switch that uses a CR2032 button 
 
 ## Status
 
-| Date       | Status                   |
-| ---------- | ------------------------ |
-| 2022-12-21 | First posting. Untested. |
+| Date       | Status                                                       |
+| ---------- | ------------------------------------------------------------ |
+| 2022-12-27 | Driver circuit simulated. Bench testing and transistor selection pending. |
+| 2022-12-23 | Working to support multiple battery options.                 |
+| 2022-12-21 | First posting. Untested.                                     |
+
+**2022-12-27**
+
+I'm going with the current driver circuit [below](#led-current-driver).
+
+**2022-12-23**
+
+I want to test some voltage regulation circuits to see so I can protect the SS Relay (<25mA) while reducing the current (and  power) draw toward the lower level and extending functionality over the range of whatever battery option is used.
 
 ## Todo
 
@@ -81,13 +91,18 @@ Short Jumper B to switch from Momentary mode to Toggle mode.
 
 A JST XH socket has been added to provide the option of using an alternate battery pack. Because the voltages vary different values for R1 may be necessary.
 
-| Batteries Used                             | Max/Nom/Min Voltages |  R1 Value   |
-| ------------------------------------------ | :------------------: | :---------: |
-| 1 x CR2032                                 |     ? / 3.0 / ?      |    180Ω     |
-| 2 x NiCd or NMH (recharable) AA or AAA     |                      | TBD ... ... |
-| 2 x Alkaline AA or AAA                     |                      |             |
-| 3 x NiCd or NMH (recharable) AA or AAA     |                      |             |
-| 3 x 2 x Alkaline AA or AAA                 |                      |             |
-| 1 x Li-ion (e.g. 18650) or LiPo pouch cell |   4.2 / 3.7 / 2.5    |             |
-| 1 x LiFePO4 (LFP) cell                     |   3.65 / 3.2 / 2.0   |             |
+| Batteries Used                             | Max/Nom/Min Voltages |
+| ------------------------------------------ | :------------------: |
+| 1 x CR2032                                 |   3.4 / 3.0 / 2.7    |
+| 2 x NiCd or NMH (recharable) AA or AAA     |   3.0 / 2.4 / 2.3    |
+| 2 x Alkaline AA or AAA                     |    3.3 / 3.0 / ?     |
+| 3 x NiCd or NMH (recharable) AA or AAA     |   4.5 / 3.6 / 3.45   |
+| 3 x Alkaline AA or AAA                     |    4.95 / 4.5 / ?    |
+| 1 x Li-ion (e.g. 18650) or LiPo pouch cell |   4.2 / 3.7 / 2.5    |
+| 1 x LiFePO4 (LFP) cell                     |   3.65 / 3.2 / 2.0   |
 
+## LED Current Driver
+
+This 2-transistor current driver will maintain the SS Relay optical input current at about 10mA across the input voltage range of 2.0 to 4.5V. The circuit is simulated at [Falstad circuit.js](https://tinyurl.com/2kyk5f8h) with sliders on the right for input voltage and the collector resistor value. There's an ammeter and voltage probe for the LED.
+
+![](assets/driver-circuit.png)
