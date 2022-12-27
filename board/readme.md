@@ -28,10 +28,10 @@ The first will use the coin cell holder, the second will use a JST XH 2.5mm or s
 
 | Component                          | Source                                                       | Specs                                                        |
 | ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Capacitive touch sensor board (S1) | [HiLetgo TTP223-BA6 Cap Switch](https://smile.amazon.com/dp/B01D1D0FLG) (Amazon ) ([datasheet](assets/Cap-Touch-TTP223.pdf)) | 2.0-5.5V  3µA max Toggle\|Momentary, Active High\|Low        |
+| Capacitive touch sensor board (S1) | [HiLetgo TTP223-BA6 Cap Switch](https://smile.amazon.com/dp/B01D1D0FLG) (Amazon ) ([datasheet](../assets/Cap-Touch-TTP223.pdf)) | 2.0-5.5V  3µA max Toggle\|Momentary, Active High\|Low        |
 | Solid State Relay (K1)             | [Toshiba TLP241A](https://www.digikey.com/short/rw8vd8dn) ([datasheet](https://toshiba.semicon-storage.com/info/TLP241A_datasheet_en_20200217.pdf?did=14237&prodName=TLP241A)) | LED: 7.5mA Vf: 1.27V<br>Iout: 2A continuous, 6A pulsed<br>Ron: 90mΩ |
 | NPN Transistors Q1,Q2              | On Semi [PN2222ABU](https://www.digikey.com/short/n4rrtfnb)  |                                                              |
-| Resistor 1.0 / 2.2/3.3Ω (R1) 1206  |                                                              | 1/4W 5% 1206                                                 |
+| Resistor 1.0 / 2.2/3.3kΩ (R1) 1206 |                                                              | 1/4W 5% 1206                                                 |
 | Resistor 47 or 56Ω (R2) 1206       |                                                              | 1/4W 5% 1206                                                 |
 | Switch Lead Connector              | 0.1" or 2.54mm pitch connector or header posts               |                                                              |
 | **Button Cell Option**             |                                                              |                                                              |
@@ -48,11 +48,11 @@ Using lower resistance values for R2 will increase the current draw by a meaning
 
 The board is intended to be mounted with the cap sensor exposed. There are 3.5mm holes for securing with M3 screws or 3D printed posts.
 
-On the bottom is a button cell holder for (2) CR2016 cells.
+On the bottom is a button cell holder for (1) CR2032 cells.
 
 ## Cap Touch Sensor
 
-<img src="assets/cap_touch_sensor.png" alt="cap sensor" style="zoom:150%;" />
+<img src="../assets/cap_touch_sensor.png" alt="cap sensor" style="zoom:150%;" />
 
 ## Printed Circuit Board
 
