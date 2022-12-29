@@ -6,8 +6,9 @@ This project aims to create a capacitive touch switch that uses a CR2032 button 
 
 ## Status
 
-| Date       | Status                                                       |
-| ---------- | ------------------------------------------------------------ |
+|    Date    | Status                                                       |
+| :--------: | ------------------------------------------------------------ |
+| 2022-12-29 | Boards ordered.                                              |
 | 2022-12-27 | Driver circuit simulated. Bench testing and transistor selection pending. |
 | 2022-12-23 | Working to support multiple battery options.                 |
 | 2022-12-21 | First posting. Untested.                                     |

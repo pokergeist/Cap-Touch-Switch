@@ -10,6 +10,7 @@ Support for various battery options has been implemented via an external battery
 
 | Date       | Status                   |
 | ---------- | ------------------------ |
+| 2022-12-29 | Boards ordered.          |
 | 2022-12-27 | First posting. Untested. |
 
 ## Todo
@@ -26,19 +27,21 @@ Two options are provided for powering this board. Parts for one option or the ot
 
 The first will use the coin cell holder, the second will use a JST XH 2.5mm or similar 2.54mm pitch connection option.
 
-| Component                          | Source                                                       | Specs                                                        |
-| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Capacitive touch sensor board (S1) | [HiLetgo TTP223-BA6 Cap Switch](https://smile.amazon.com/dp/B01D1D0FLG) (Amazon ) ([datasheet](../assets/Cap-Touch-TTP223.pdf)) | 2.0-5.5V  3µA max Toggle\|Momentary, Active High\|Low        |
-| Solid State Relay (K1)             | [Toshiba TLP241A](https://www.digikey.com/short/rw8vd8dn) ([datasheet](https://toshiba.semicon-storage.com/info/TLP241A_datasheet_en_20200217.pdf?did=14237&prodName=TLP241A)) | LED: 7.5mA Vf: 1.27V<br>Iout: 2A continuous, 6A pulsed<br>Ron: 90mΩ |
-| NPN Transistors Q1,Q2              | On Semi [PN2222ABU](https://www.digikey.com/short/n4rrtfnb)  |                                                              |
-| Resistor 1.0 / 2.2/3.3kΩ (R1) 1206 |                                                              | 1/4W 5% 1206                                                 |
-| Resistor 47 or 56Ω (R2) 1206       |                                                              | 1/4W 5% 1206                                                 |
-| Switch Lead Connector              | 0.1" or 2.54mm pitch connector or header posts               |                                                              |
-| **Button Cell Option**             |                                                              |                                                              |
-| Coin Cell Holder (B1)              | [Keystone 1026](https://www.digikey.com/short/f35w9mv4) ([datasheet](https://www.keyelco.com/userAssets/file/M65p3.pdf)) | 4.5mm standoffs, (1) CR2032<br> or (2) CR2016 or 2025s       |
-| CR2032 Coin Cells (B1)             |                                                              | 3V nominal                                                   |
-| **External Battery Option**        |                                                              |                                                              |
-| External Battery Connector         | JST XH 2.5mm pitch, straight                                 |                                                              |
+| Component                            | Source                                                       | Specs                                                        |
+| ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Capacitive touch sensor board (S1)   | [HiLetgo TTP223-BA6 Cap Switch](https://smile.amazon.com/dp/B01D1D0FLG) (Amazon ) ([datasheet](../assets/Cap-Touch-TTP223.pdf)) | 2.0-5.5V  3µA max Toggle\|Momentary, Active High\|Low        |
+| Solid State Relay (K1)               | [Toshiba TLP241A,TP1](https://www.digikey.com/short/rw8vd8dn) ([datasheet](https://toshiba.semicon-storage.com/info/TLP241A_datasheet_en_20200217.pdf?did=14237&prodName=TLP241A)) | LED: 7.5mA Vf: 1.27V<br>Iout: 2A continuous, 6A pulsed<br>Ron: 90mΩ |
+| NPN Transistors Q1,Q2                | On Semi [PN2222ABU](https://www.digikey.com/short/n4rrtfnb)  |                                                              |
+| Resistor 1.0 / 2.2 / 3.3kΩ (R1) 1206 | D-K [search](https://www.digikey.com/short/ff9cftjb)         | 1/4W 5% 1206                                                 |
+| Resistor 47 - 56Ω (R2) 1206 (*)      | D-K [search](https://www.digikey.com/short/tv9vv7dh)         | 1/4W 5% 1206                                                 |
+| Switch Lead Connector                | 0.1" or 2.54mm pitch connector or header posts               |                                                              |
+| **Button Cell Option**               |                                                              |                                                              |
+| Coin Cell Holder (B1)                | [Keystone 1026](https://www.digikey.com/short/f35w9mv4) ([datasheet](https://www.keyelco.com/userAssets/file/M65p3.pdf)) | 4.5mm standoffs, (1) CR2032<br> or (2) CR2016 or 2025s       |
+| CR2032 Coin Cells (B1)               |                                                              | 3V nominal                                                   |
+| **External Battery Option**          |                                                              |                                                              |
+| External Battery Connector           | JST [XH](https://www.digikey.com/short/9hf4mnvj) 2.5mm pitch, straight |                                                              |
+
+\* Values need to be verified with test hardware (pending).
 
 Using lower resistance values for R1 will increase the current draw ever so slightly.
 
