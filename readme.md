@@ -2,16 +2,25 @@
 
 ## Introduction
 
-This project aims to create a capacitive touch switch that uses a CR2032 button cell to power a capacitive touch sensor and solid state relay to to assist with switch-adapting a device for assistive technology purposes.
+This project aims to create a capacitive touch switch that uses a CR2032 button cell to power a capacitive touch sensor and solid state relay to to assist with switch-adapting a device for assistive technology purposes. The relay is rated at 2A continuous, 40V.
 
 ## Status
 
 |    Date    | Status                                                       |
 | :--------: | ------------------------------------------------------------ |
+| 2023-01-06 | Boards received, testing underway.                           |
 | 2022-12-29 | Boards ordered.                                              |
 | 2022-12-27 | Driver circuit simulated. Bench testing and transistor selection pending. |
 | 2022-12-23 | Working to support multiple battery options.                 |
 | 2022-12-21 | First posting. Untested.                                     |
+
+**2023-01-06**
+
+The boards have been received and (4) boards assembled. What's up:
+
+* The Keystone #1026 button cell holder footprint is wrong (too big) due to their goofy datasheet but moded #103 should fit perfectly since that is what was depicted. Ordering those from Mouser.
+* I quickly tested (4) boards with a Lithium pouch (LiPo) cell and the Cap Touch sensor is working fine . I'll be testing with other voltages and testing the SS Relay and capturing video too.
+* I need more transistors and relays to populate many more boards, and some new coin cell holders.
 
 **2022-12-27**
 
