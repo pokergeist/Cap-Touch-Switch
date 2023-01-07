@@ -18,7 +18,7 @@ Support for various battery options has been implemented via an external battery
 
 The boards have been received and (4) boards assembled. What's up:
 
-* The Keystone #1026 button cell footprint is wrong (too big) due to their goofy datasheet but moded #103 should fit perfectly since that is what was depicted. Ordering those from Mouser.
+* The Keystone #1026 button cell footprint is wrong (too big) due to their goofy datasheet, but moded #103 should fit perfectly since that is what was depicted. Ordering those from Mouser.
 * I quickly tested (4) boards with a Lithium pouch (LiPo) cell and the Cap Touch sensor is working fine . I'll be testing with other voltages and testing the SS Relay and capturing video too.
 * I need more transistors and relays to populate many more boards, and some new coin cell holders.
 
@@ -40,7 +40,7 @@ The first will use the coin cell holder, the second will use a JST XH 2.5mm or s
 | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Capacitive touch sensor board (S1)   | [HiLetgo TTP223-BA6 Cap Switch](https://smile.amazon.com/dp/B01D1D0FLG) (Amazon ) ([datasheet](../assets/Cap-Touch-TTP223.pdf)) | 2.0-5.5V  3µA max Toggle\|Momentary, Active High\|Low        |
 | Solid State Relay (K1)               | [Toshiba TLP241A,TP1](https://www.digikey.com/short/rw8vd8dn) ([datasheet](https://toshiba.semicon-storage.com/info/TLP241A_datasheet_en_20200217.pdf?did=14237&prodName=TLP241A)) | LED: 7.5mA Vf: 1.27V<br>Iout: 2A continuous, 6A pulsed<br>Ron: 90mΩ<br>40V |
-| NPN Transistors Q1,Q2                | On Semi [PN2222ABU](https://www.digikey.com/short/n4rrtfnb)  |                                                              |
+| NPN Transistors Q1,Q2                | On Semi [PN2222ABU](https://www.digikey.com/short/n4rrtfnb)  | 40V 1A 625mW                                                 |
 | Resistor 1.0 / 2.2 / 3.3kΩ (R1) 1206 | D-K [search](https://www.digikey.com/short/ff9cftjb)         | 1/4W 5% 1206                                                 |
 | Resistor 47 - 56Ω (R2) 1206 (*)      | D-K [search](https://www.digikey.com/short/tv9vv7dh)         | 1/4W 5% 1206                                                 |
 | Switch Lead Connector                | 0.1" or 2.54mm pitch connector or header posts               |                                                              |
@@ -134,3 +134,9 @@ This 2-transistor current driver will maintain the SS Relay optical input curren
 The top transistor will conduct current until the voltage drop across the 56Ω resistor approaches 0.7V, turning on the lower transistor. As the lower transistor turns on it will start pulling the base of the upper transistor to ground, turning off the upper transistor which will reduce the LED current to an equilibrium point.
 
 ![LED driver circuit](../assets/driver-circuit.png)
+
+## Voltage, Current, & Power Measurements
+
+Measurements were taken using input voltages from 1.5 (the minimum) to 5.0V. The greatest efficiency is at low votage where the sensor's LED is barely on and the power lost at Q1 is minimal.
+
+The measurement log is [here](Current-and-Power-Draw.md).
