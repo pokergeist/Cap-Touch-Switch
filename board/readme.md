@@ -49,8 +49,9 @@ The first will use the coin cell holder, the second will use a JST XH 2.5mm or s
 | ~~Coin Cell Holder (B1)~~            | ~~[Keystone 1026](https://www.digikey.com/short/f35w9mv4) ([datasheet](https://www.keyelco.com/userAssets/file/M65p3.pdf))~~ | Doesn't fit                                                  |
 | CR2032 Coin Cells (B1)               |                                                              | 3V nominal                                                   |
 | **External Battery Option**          |                                                              |                                                              |
-| External Battery Connector           | JST [XH](https://www.digikey.com/short/9hf4mnvj) 2.5mm pitch, straight |                                                              |
-| Battery Holder Pigtail Connector     | JST [XH](https://www.digikey.com/short/7fpfp333) 2.5mm pitch housing |                                                              |
+| External Battery Connector           | JST [XH header](https://www.digikey.com/short/9hf4mnvj) 2-position, 2.5mm pitch, straight |                                                              |
+| Battery Holder Pigtail Connector     | JST [XH housing](https://www.digikey.com/short/7fpfp333) 2-position, 2.5mm pitch |                                                              |
+| Pigtail Connector Contacts (x 2)     | JST [XH contact](https://www.digikey.com/short/d91c10q9)     |                                                              |
 
 \* Values need to be verified with test hardware (pending).
 
