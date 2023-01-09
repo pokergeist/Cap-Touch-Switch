@@ -50,6 +50,7 @@ The first will use the coin cell holder, the second will use a JST XH 2.5mm or s
 | CR2032 Coin Cells (B1)               |                                                              | 3V nominal                                                   |
 | **External Battery Option**          |                                                              |                                                              |
 | External Battery Connector           | JST [XH](https://www.digikey.com/short/9hf4mnvj) 2.5mm pitch, straight |                                                              |
+| Battery Holder Pigtail Connector     | JST [XH](https://www.digikey.com/short/7fpfp333) 2.5mm pitch housing |                                                              |
 
 \* Values need to be verified with test hardware (pending).
 
