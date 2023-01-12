@@ -10,9 +10,14 @@ Support for various battery options has been implemented via an external battery
 
 | Date       | Status                                             |
 | ---------- | -------------------------------------------------- |
+| 2023-01-12 | All done for now.                                  |
 | 2023-01-05 | Boards received and assembled. More parts ordered. |
 | 2022-12-29 | Boards ordered.                                    |
 | 2022-12-27 | First posting. Untested.                           |
+
+**2021-01-12**
+
+The new coin cell battery holders arrived and fit perfectly. Voltage and current test results are linked at the bottom.
 
 **2023-01-06**
 

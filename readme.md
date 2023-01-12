@@ -8,11 +8,16 @@ This project aims to create a capacitive touch switch that uses a CR2032 button 
 
 |    Date    | Status                                                       |
 | :--------: | ------------------------------------------------------------ |
+| 2023-01-12 | All done for now.                                            |
 | 2023-01-06 | Boards received, testing underway.                           |
 | 2022-12-29 | Boards ordered.                                              |
 | 2022-12-27 | Driver circuit simulated. Bench testing and transistor selection pending. |
 | 2022-12-23 | Working to support multiple battery options.                 |
 | 2022-12-21 | First posting. Untested.                                     |
+
+**2021-01-12**
+
+The new coin cell battery holders arrived and fit perfectly. The current draw test results are [here](board/Current-and-Power-Draw.md).
 
 **2023-01-06**
 
