@@ -8,12 +8,17 @@ This project aims to create a capacitive touch switch that uses a CR2032 button 
 
 |    Date    | Status                                                       |
 | :--------: | ------------------------------------------------------------ |
+| 2023-02-25 | Revising for polarity issue & new JST PH connector. Rev 2b.  |
 | 2023-01-12 | All done for now.                                            |
 | 2023-01-06 | Boards received, testing underway.                           |
 | 2022-12-29 | Boards ordered.                                              |
 | 2022-12-27 | Driver circuit simulated. Bench testing and transistor selection pending. |
 | 2022-12-23 | Working to support multiple battery options.                 |
 | 2022-12-21 | First posting. Untested.                                     |
+
+**2022-02-25**
+
+The Eagle model for the coin cell was wrong and the polarity was backwards so that has been fixed. A JST PH-2 connector (B2.2) option was added. The XH-2 connector (B2.1) was moved into the coin cell (B1) area making them mutually exclusive. Rev 2b.
 
 **2021-01-12**
 
@@ -84,7 +89,7 @@ Short Jumper B to switch from Momentary mode to Toggle mode.
 
 ## Battery Options
 
-A JST XH socket has been added to provide the option of using an alternate battery pack. Because the voltages vary different values for R1 may be necessary.
+Provisions for JST XH and PH headers have been added to facilitate the option of using an alternate battery pack. The 2.5mm pitch XH connectors handle bigger wire and are easier to crimp. The 2.0mm pitch PH connectors are common and can be plugged into Feather style microcontroller boards. Because the voltages vary different values for R1 may be necessary.
 
 | Batteries Used                             | Max/Nom/Min Voltages |
 | ------------------------------------------ | :------------------: |

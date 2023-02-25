@@ -8,12 +8,17 @@ Support for various battery options has been implemented via an external battery
 
 ## Status
 
-| Date       | Status                                             |
-| ---------- | -------------------------------------------------- |
-| 2023-01-12 | All done for now.                                  |
-| 2023-01-05 | Boards received and assembled. More parts ordered. |
-| 2022-12-29 | Boards ordered.                                    |
-| 2022-12-27 | First posting. Untested.                           |
+|    Date    | Status                                                      |
+| :--------: | ----------------------------------------------------------- |
+| 2023-02-25 | Revising for polarity issue & new JST PH connector. Rev 2b. |
+| 2023-01-12 | All done for now.                                           |
+| 2023-01-05 | Boards received and assembled. More parts ordered.          |
+| 2022-12-29 | Boards ordered.                                             |
+| 2022-12-27 | First posting. Untested.                                    |
+
+**2022-02-25**
+
+The Eagle model for the coin cell was wrong and the polarity was backwards so that has been fixed. A JST PH-2 connector (B2.2) option was added. The XH-2 connector (B2.1) was moved into the coin cell (B1) area making them mutually exclusive. Rev 2b.
 
 **2021-01-12**
 
@@ -54,7 +59,8 @@ The first will use the coin cell holder, the second will use a JST XH 2.5mm or s
 | ~~Coin Cell Holder (B1)~~            | ~~[Keystone 1026](https://www.digikey.com/short/f35w9mv4) ([datasheet](https://www.keyelco.com/userAssets/file/M65p3.pdf))~~ | Doesn't fit                                                  |
 | CR2032 Coin Cells (B1)               |                                                              | 3V nominal                                                   |
 | **External Battery Option**          |                                                              |                                                              |
-| External Battery Connector           | JST [XH header](https://www.digikey.com/short/9hf4mnvj) 2-position, 2.5mm pitch, straight |                                                              |
+| External Battery Connector B2.1      | JST [XH header](https://www.digikey.com/short/9hf4mnvj) 2-position, 2.5mm pitch, straight |                                                              |
+| External Battery Connector B2.2      | JST [PH header](https://www.digikey.com/short/wp55373q) 2-position, 2.0mm pitch, straight |                                                              |
 | Battery Holder Pigtail Connector     | JST [XH housing](https://www.digikey.com/short/7fpfp333) 2-position, 2.5mm pitch |                                                              |
 | Pigtail Connector Contacts (x 2)     | JST [XH contact](https://www.digikey.com/short/d91c10q9)     |                                                              |
 
